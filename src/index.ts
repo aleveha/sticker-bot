@@ -1,8 +1,11 @@
 import { Bot } from "grammy";
 import { envs } from "~/configs/envs.ts";
+import { startHandler } from "~/handlers";
 
-const bot = new Bot(envs.TELEGRAM_TOKEN);
+import type { BotContext } from "~/types.ts";
 
-bot.command("start", (ctx) => ctx.reply("Hi, I'm Sticker Bot!"));
+const bot = new Bot<BotContext>(envs.TELEGRAM_TOKEN);
+
+bot.command("start", startHandler);
 
 await bot.start();
