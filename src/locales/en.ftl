@@ -6,4 +6,14 @@ start-command =
 
         <b>Hurry up and add me to your chat and check out how many stickerpacks you haven't seen yet!</b> 🔥
 
+        Press /help to find out more!
+
     .button = Try me in your chat
+
+help-command =
+    .message =
+        <b>Available commands:</b>
+
+        /start – getting started
+
+        /help – list of available commands
