@@ -17,6 +17,8 @@
 		"typescript": "^5.5.4"
 	},
 	"dependencies": {
+		"@grammyjs/fluent": "^1.0.3",
+		"@moebius/fluent": "^1.1.0",
 		"grammy": "^1.28.0",
 		"valibot": "^0.37.0"
 	}
