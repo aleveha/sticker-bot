@@ -11,4 +11,6 @@ bot.use(useFluent({ fluent, defaultLocale: "en" }));
 
 bot.command("start", startHandler);
 
+await bot.api.setMyCommands([{ command: "start", description: "Getting started! Who am I?" }]);
+
 await bot.start();
